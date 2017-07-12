@@ -12,6 +12,8 @@
 		A9C284891F1681F30029B3FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C284871F1681F30029B3FB /* Main.storyboard */; };
 		A9C2848B1F1681F30029B3FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C2848A1F1681F30029B3FB /* Assets.xcassets */; };
 		A9C2848E1F1681F30029B3FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C2848C1F1681F30029B3FB /* LaunchScreen.storyboard */; };
+		A9C284961F1686FE0029B3FB /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C284951F1686FE0029B3FB /* LandscapeViewController.swift */; };
+		A9C284981F1687110029B3FB /* PortraitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C284971F1687110029B3FB /* PortraitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A9C2848A1F1681F30029B3FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9C2848D1F1681F30029B3FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9C2848F1F1681F30029B3FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9C284951F1686FE0029B3FB /* LandscapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
+		A9C284971F1687110029B3FB /* PortraitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				A9C2848A1F1681F30029B3FB /* Assets.xcassets */,
 				A9C2848C1F1681F30029B3FB /* LaunchScreen.storyboard */,
 				A9C2848F1F1681F30029B3FB /* Info.plist */,
+				A9C284951F1686FE0029B3FB /* LandscapeViewController.swift */,
+				A9C284971F1687110029B3FB /* PortraitViewController.swift */,
 			);
 			path = "Orientation Lock Demo";
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9C284861F1681F30029B3FB /* ViewController.swift in Sources */,
+				A9C284961F1686FE0029B3FB /* LandscapeViewController.swift in Sources */,
 				A9C284841F1681F30029B3FB /* AppDelegate.swift in Sources */,
+				A9C284981F1687110029B3FB /* PortraitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +273,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VPJJQVPPXZ;
 				INFOPLIST_FILE = "Orientation Lock Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hsoft.Orientation-Lock-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +287,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VPJJQVPPXZ;
 				INFOPLIST_FILE = "Orientation Lock Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hsoft.Orientation-Lock-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
