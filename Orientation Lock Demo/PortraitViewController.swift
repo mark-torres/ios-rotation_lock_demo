@@ -9,18 +9,26 @@
 import UIKit
 
 class PortraitViewController: UIViewController {
+	
+	let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		appDelegate.lockedInterfaceOrientation = .portrait
+		appDelegate.shouldAutoRotate = false
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+	
+	override func viewWillDisappear(_ animated: Bool) {
+		appDelegate.lockedInterfaceOrientation = .allButUpsideDown
+		appDelegate.shouldAutoRotate = true
+	}
 
     /*
     // MARK: - Navigation
@@ -37,6 +45,4 @@ class PortraitViewController: UIViewController {
 	@IBAction func tapClose(_ sender: Any) {
 		dismiss(animated: true, completion: nil)
 	}
-	
-
 }

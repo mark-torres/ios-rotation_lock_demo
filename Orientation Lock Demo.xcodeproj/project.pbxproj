@@ -14,6 +14,7 @@
 		A9C2848E1F1681F30029B3FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C2848C1F1681F30029B3FB /* LaunchScreen.storyboard */; };
 		A9C284961F1686FE0029B3FB /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C284951F1686FE0029B3FB /* LandscapeViewController.swift */; };
 		A9C284981F1687110029B3FB /* PortraitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C284971F1687110029B3FB /* PortraitViewController.swift */; };
+		A9C2849A1F168F3F0029B3FB /* MyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C284991F168F3F0029B3FB /* MyUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A9C2848F1F1681F30029B3FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9C284951F1686FE0029B3FB /* LandscapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
 		A9C284971F1687110029B3FB /* PortraitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitViewController.swift; sourceTree = "<group>"; };
+		A9C284991F168F3F0029B3FB /* MyUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				A9C2848F1F1681F30029B3FB /* Info.plist */,
 				A9C284951F1686FE0029B3FB /* LandscapeViewController.swift */,
 				A9C284971F1687110029B3FB /* PortraitViewController.swift */,
+				A9C284991F168F3F0029B3FB /* MyUtils.swift */,
 			);
 			path = "Orientation Lock Demo";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9C284861F1681F30029B3FB /* ViewController.swift in Sources */,
+				A9C2849A1F168F3F0029B3FB /* MyUtils.swift in Sources */,
 				A9C284961F1686FE0029B3FB /* LandscapeViewController.swift in Sources */,
 				A9C284841F1681F30029B3FB /* AppDelegate.swift in Sources */,
 				A9C284981F1687110029B3FB /* PortraitViewController.swift in Sources */,

@@ -9,18 +9,26 @@
 import UIKit
 
 class LandscapeViewController: UIViewController {
+	
+	let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		appDelegate.lockedInterfaceOrientation = .landscape
+		appDelegate.shouldAutoRotate = false
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+	
+	override func viewWillDisappear(_ animated: Bool) {
+		appDelegate.lockedInterfaceOrientation = .allButUpsideDown
+		appDelegate.shouldAutoRotate = true
+	}
 
     /*
     // MARK: - Navigation
