@@ -17,7 +17,6 @@ class LandscapeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
 		appDelegate.lockedInterfaceOrientation = .landscape
-		appDelegate.shouldAutoRotate = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,8 +25,7 @@ class LandscapeViewController: UIViewController {
     }
 	
 	override func viewWillDisappear(_ animated: Bool) {
-		appDelegate.lockedInterfaceOrientation = .allButUpsideDown
-		appDelegate.shouldAutoRotate = true
+		appDelegate.lockedInterfaceOrientation = .portrait
 	}
 
     /*

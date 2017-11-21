@@ -17,7 +17,6 @@ class PortraitViewController: UIViewController {
 
         // Do any additional setup after loading the view.
 		appDelegate.lockedInterfaceOrientation = .portrait
-		appDelegate.shouldAutoRotate = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,8 +25,7 @@ class PortraitViewController: UIViewController {
     }
 	
 	override func viewWillDisappear(_ animated: Bool) {
-		appDelegate.lockedInterfaceOrientation = .allButUpsideDown
-		appDelegate.shouldAutoRotate = true
+		appDelegate.lockedInterfaceOrientation = .portrait
 	}
 
     /*
